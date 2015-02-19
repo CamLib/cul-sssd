@@ -1,6 +1,8 @@
 ---
 sssd::packages:
     - sssd
+    - sssd-tools
+    - realmd
 
 sssd::version: 'latest'
 sssd::enable: 'true'

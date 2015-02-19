@@ -1,9 +1,9 @@
 class sssd::service {
 
-    $ensure = $sssd::start ? {true => running, default => stopped}
+#    $ensure = $sssd::start ? {true => running, default => stopped}
 
-    service{"sssd":
-        ensure  => $ensure,
-        enable  => $sssd::enable,
-    }
+#    service{"sssd":
+#        ensure  => $ensure,
+#        enable  => $sssd::enable,
+#    }
 }
