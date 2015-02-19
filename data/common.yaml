@@ -3,6 +3,8 @@ sssd::packages:
     - sssd
     - sssd-tools
     - realmd
+    - adcli
+    - samba-common-bin
 
 sssd::version: 'latest'
 sssd::enable: 'true'
