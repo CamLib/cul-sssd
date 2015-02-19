@@ -1,0 +1,7 @@
+---
+sssd::packages:
+    - sssd
+
+sssd::version: 'latest'
+sssd::enable: 'true'
+sssd::start: 'true'
