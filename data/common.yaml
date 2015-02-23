@@ -7,5 +7,5 @@ sssd::packages:
     - samba-common-bin
 
 sssd::version: 'latest'
-sssd::enable: 'true'
-sssd::start: 'true'
+sssd::enable: true
+sssd::start: true
