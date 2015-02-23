@@ -1,8 +1,8 @@
 class sssd (
-    $enable     = true,
-    $start      = true,
-    $packages   = [],
-    $version    = 'latest',
+    $enable     = undef,
+    $start      = undef,
+    $packages   = undef,
+    $version    = undef,
 ) {
     class{'sssd::install': } ->
     class{'sssd::config': } ~>
