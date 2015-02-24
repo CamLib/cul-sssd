@@ -3,6 +3,8 @@ class sssd (
     $start      = true,
     $packages   = [],
     $version    = 'latest',
+    $domain     = '',
+    
 ) {
     class{'sssd::install': } ->
     class{'sssd::config': } ~>

@@ -6,6 +6,7 @@ sssd::packages:
     - adcli
     - samba-common-bin
 
-sssd::version: 'latest'
+sssd::version: latest
 sssd::enable: true
 sssd::start: true
+sssd::domain: ad.lib.cam.ac.uk

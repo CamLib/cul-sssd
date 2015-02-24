@@ -1,0 +1,16 @@
+[service]
+automatic-install = no
+
+[active-directory]
+default-client = sssd
+os-name = <%= @operatingsystem -%>
+os-version = <%= @operatingsystemrelease -%>
+
+[<%= @domain -%>]
+computer-ou = OU=Servers,OU=CUL,DC=ad,DC=lib,DC=cam,DC=ac,DC=uk
+user-prinicpal = no
+fully-qualified-names = no
+
+[users]
+default-shell = /bin/bash
+default-home = /home/%U
