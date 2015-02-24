@@ -3,8 +3,8 @@ automatic-install = no
 
 [active-directory]
 default-client = sssd
-os-name = <%= @operatingsystem -%>
-os-version = <%= @operatingsystemrelease -%>
+os-name = <%= @operatingsystem %>
+os-version = <%= @operatingsystemrelease %>
 
 [<%= @domain -%>]
 computer-ou = OU=Servers,OU=CUL,DC=ad,DC=lib,DC=cam,DC=ac,DC=uk
