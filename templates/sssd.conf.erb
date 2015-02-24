@@ -4,8 +4,8 @@ domains = <%= @domain %>
 services = nss, pam
 
 [domain/<%= @domain -%>]
-ad_domain = <%= #domain %>
-krb5_realm = <%= #domain.upcase %>
+ad_domain = <%= @domain %>
+krb5_realm = <%= @domain.upcase %>
 realmd_tags = manages-system joined-with-adcli 
 cache_credentials = True
 krb5_store_password_if_offline = True
