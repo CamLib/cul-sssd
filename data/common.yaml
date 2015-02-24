@@ -5,6 +5,7 @@ sssd::packages:
     - realmd
     - adcli
     - samba-common-bin
+    - krb5-user
 
 sssd::version: latest
 sssd::enable: true
