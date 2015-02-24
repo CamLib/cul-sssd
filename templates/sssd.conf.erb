@@ -1,9 +1,9 @@
 [sssd]
 config_file_version = 2
-domains = <%= @sss_domain %>
+domains = <%= @domain %>
 services = nss, pam
 
-[domain/<%= @sss_domain -%>]
+[domain/<%= @domain -%>]
 id_provider = ad
 auth_provider = ad
 access_provider = ad
@@ -13,7 +13,7 @@ ldap_schema = ad
 ldap_idmap_range_min = 10000
 ldap_idmap_range_max = 50000
 ldap_idmap_range_size = 40000
-ldap_idmap_default_domain = <%= @sss_domain -%>
+ldap_idmap_default_domain = <%= @domain -%>
 
 default_shell = /bin/bash
 fallback_homedir = /home/%u

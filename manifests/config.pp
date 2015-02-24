@@ -1,5 +1,5 @@
 class sssd::config (
-
+    $domain = $sss::domain,
 ) {
     file {
         '/etc/realmd.conf':
