@@ -2,6 +2,9 @@ class sssd::config (
     $domain = $sssd::domain,
 ) {
     file {
+        '/etc/krb5.conf':
+            ensure => file,
+            content => template('sssd/krb5.conf.erb');
         '/etc/realmd.conf':
             ensure => file,
             content => template('sssd/realmd.conf.erb');
